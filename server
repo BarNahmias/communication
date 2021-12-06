@@ -1,3 +1,18 @@
+# import socket module
+from socket import *
+import sys  # In order to terminate the program
+
+ip = "127.0.0.1"
+port = 6789
+SERVER_ADDRESS = (ip, port)
+serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket.bind(SERVER_ADDRESS)
+serverSocket.listen(1)
+print("The server is ready to receive")
+
+# Prepare a sever socket
+# Fill in start
+# Fill in end
 while True:
     # Establish the connection
     print('Ready to serve...')
